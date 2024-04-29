@@ -4,8 +4,8 @@ Script made in python to extract faces from an image that contains the searched 
 
 ### Requirements
 
-- Python 3.8;
-- Virtual env;
+- Python 3.8
+- Virtual env
 - os, PIL, pytesseract, cv2, numpy, math, signal
 
 
