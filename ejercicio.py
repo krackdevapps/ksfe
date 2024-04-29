@@ -65,7 +65,7 @@ class KracktonSearchFaceEngine:
     def resultsIterator(self):
         listImages = self.searchResults["images"]
         if len(listImages) == 0:
-            return print("No se han encontrado resultados con esa busqueda")
+            return print("Results not found")
         for imgDetails in listImages:
             self.constructorSheet(imgDetails)
 
