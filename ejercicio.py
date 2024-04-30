@@ -54,7 +54,7 @@ class KracktonSearchFaceEngine:
         results = []
         img_cv = cv.cvtColor(np.array(img), cv.COLOR_RGB2BGR)
         gray_img = cv.cvtColor(img_cv, cv.COLOR_BGR2GRAY)
-        face_cascade = cv.CascadeClassifier("files/haarcascade_frontalface_default.xml")
+        face_cascade = cv.CascadeClassifier("haarcascade_frontalface_default.xml")
         faces = face_cascade.detectMultiScale(gray_img, 1.3, 5)
         # Extraer las caras detectadas y mostrarlas
         for x, y, w, h in faces:
